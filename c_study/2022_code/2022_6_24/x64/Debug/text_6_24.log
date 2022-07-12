@@ -1,0 +1,8 @@
+﻿  源.cpp
+D:\c语言源文件c-code\study\2022_code\text_6_24\源.cpp(117,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+D:\c语言源文件c-code\study\2022_code\text_6_24\源.cpp(117,9): message : 请考虑在格式字符串中使用“%zd”
+D:\c语言源文件c-code\study\2022_code\text_6_24\源.cpp(118,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+D:\c语言源文件c-code\study\2022_code\text_6_24\源.cpp(118,9): message : 请考虑在格式字符串中使用“%lld”
+D:\c语言源文件c-code\study\2022_code\text_6_24\源.cpp(118,9): message : 请考虑在格式字符串中使用“%Id”
+D:\c语言源文件c-code\study\2022_code\text_6_24\源.cpp(118,9): message : 请考虑在格式字符串中使用“%I64d”
+  text_6_24.vcxproj -> D:\c语言源文件c-code\study\2022_code\text_6_24\x64\Debug\text_6_24.exe
