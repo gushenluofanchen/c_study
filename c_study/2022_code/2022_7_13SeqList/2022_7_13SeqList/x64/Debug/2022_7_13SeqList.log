@@ -1,0 +1,5 @@
+﻿  SeqList.cpp
+D:\c语言源文件c-code\c_study\2022_code\2022_7_13SeqList\2022_7_13SeqList\SeqList.cpp(48,18): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+  Test.cpp
+  正在生成代码...
+  2022_7_13SeqList.vcxproj -> D:\c语言源文件c-code\c_study\2022_code\2022_7_13SeqList\x64\Debug\2022_7_13SeqList.exe

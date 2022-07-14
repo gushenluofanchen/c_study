@@ -2,6 +2,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+#include<assert.h>
 
 //#define N 100
 //typedef int SLDataType;
@@ -36,21 +37,31 @@
 
 
 
-
+//SeqList相关申明
 typedef int SLDataType;
 
 
 //动态顺序表
 typedef struct SeqList {
 
-	SLDataType* a;
+	SLDataType* a;//指向动态开辟的数据元素类型为SLDataType的数组
 	int size;//表示数组中有多少数据
 	int capacity;//表示实际能存数据的空间容量
 }SL;
 
+
+
 //接口函数------命名风格是跟着c++STL库州的,方便后续学习STL
-void SeqListInit(SL* ps, SLDataType x);//初始化
-void SeqListPushBack(SL* ps, SLDataType x);//尾插
+void SeqListPrint(SL* ps);//打印
+
+void SeqListInit(SL* ps);//初始化
+
+void SeqListPushBack(SL* ps, SLDataType x);//尾插,插入的数据是x
 void SeqListPopBack(SL* ps);//尾删
-void SeqListPushFront(SL* ps, SLDataType x);//头插
+
+void SeqListPushFront(SL* ps, SLDataType x);//头插,插入的数据是x
 void SeqListPopFront(SL* ps);//头删
+
+void SeqListDestory(SL*ps);
+
+
