@@ -56,12 +56,22 @@ void SeqListPrint(SL* ps);//打印
 
 void SeqListInit(SL* ps);//初始化
 
+void SeqListCheckCapacity(SL* ps);//检查是否需要扩容
+
 void SeqListPushBack(SL* ps, SLDataType x);//尾插,插入的数据是x
 void SeqListPopBack(SL* ps);//尾删
 
 void SeqListPushFront(SL* ps, SLDataType x);//头插,插入的数据是x
 void SeqListPopFront(SL* ps);//头删
 
-void SeqListDestory(SL*ps);
+void SeqListDestory(SL*ps);//销毁
 
 
+
+
+//找到了返回x位置下标,没有找到返回-1
+int SeqListFind(SL*ps,SLDataType x);
+//指定pos下标位置插入数据
+void SeqListInsert(SL* ps, int pos, SLDataType x);
+//删除pos位置数据
+void SeqListErase(SL*ps,int pos);

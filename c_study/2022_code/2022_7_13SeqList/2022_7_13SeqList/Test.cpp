@@ -26,9 +26,40 @@ void testSeqList1()
 	SeqListDestory(&s1);
 }
 
+
+
+void testSeqList2()
+{
+	SL s2;
+
+	SeqListInit(&s2);
+	SeqListPushBack(&s2, 1);
+	SeqListPushBack(&s2, 2);
+	SeqListPushBack(&s2, 3);
+	SeqListPushBack(&s2, 4);
+	SeqListPushBack(&s2, 5);
+
+
+	SeqListPushFront(&s2, 30);
+	SeqListPushFront(&s2, 40);
+	SeqListPushFront(&s2, 50);
+	SeqListPrint(&s2);
+
+	SeqListPopFront(&s2);
+	SeqListPrint(&s2);
+
+	SeqListDestory(&s2);
+}
+
+
+
+
 int main()
 {
 	testSeqList1();
+
+	testSeqList2();
+
 
 	return 0;
 }
